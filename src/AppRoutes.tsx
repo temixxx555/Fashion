@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import Layout from "./layouts/layout";
-import Collectionspage from "./Pages/CollectionsPage"; // Ensure the import path is correct
+// Ensure the import path is correct
 import Collection from "./components/Collection"; // Import your Collection component if it's a separate page
 import FitnessSupplement from "./Pages/FitnessSupplements";
-import MasonPage from "./Pages/MasonPage";
+
 import ItemPage from "./Pages/ItemPage";
 import Jerseys from "./Pages/Jerseys";
 import BottomPage from "./Pages/BotttomsPage";
@@ -34,8 +34,8 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-       {/* Jersey page */}
-       <Route
+      {/* Jersey page */}
+      <Route
         path='/jersey'
         element={
           <Layout>
@@ -43,8 +43,8 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-       {/* Bottoms page */}
-       <Route
+      {/* Bottoms page */}
+      <Route
         path='/bottoms'
         element={
           <Layout>
@@ -52,8 +52,8 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-       {/* women page */}
-       <Route
+      {/* women page */}
+      <Route
         path='/women'
         element={
           <Layout>
@@ -61,8 +61,8 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-       {/* tshirts page */}
-       <Route
+      {/* tshirts page */}
+      <Route
         path='/tshirts'
         element={
           <Layout>
@@ -70,8 +70,8 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-       {/* footwear page */}
-       <Route
+      {/* footwear page */}
+      <Route
         path='/footwear'
         element={
           <Layout>
@@ -79,8 +79,8 @@ const AppRoutes = () => {
           </Layout>
         }
       />
-       {/* Accessories page */}
-       <Route
+      {/* Accessories page */}
+      <Route
         path='/accesories'
         element={
           <Layout>
@@ -91,26 +91,6 @@ const AppRoutes = () => {
       {/* Collections Page */}
       <Route path='/collections' element={<Collection />} />{" "}
       {/* Adjusting the path */}
-      {/* Individual Collection Page */}
-      <Route
-        path='/collectionpage/:id'
-        element={
-          <Layout>
-            <Collectionspage />
-          </Layout>
-        }
-      />{" "}
-      {/* Individual collection item page */}
-      {/* Individual Collection Page */}
-      <Route
-        path='/Mason/:id'
-        element={
-          <Layout>
-            <MasonPage />
-          </Layout>
-        }
-      />{" "}
-      {/* Individual collection item page */}
       {/* Individual Item Page */}
       <Route
         path='/:category/:id'

@@ -5,6 +5,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import CartIcon from "./CartIcon";
 
 const Header = () => {
   // State to manage the dropdown visibility
@@ -257,12 +258,7 @@ const Header = () => {
             <a href='/account' className='hover:text-gray-300'>
               👤
             </a>
-            <a href='/cart' className='relative hover:text-gray-300'>
-              🛒
-              <span className='absolute top-0 right-0 bg-red-500 text-xs text-white rounded-full px-1'>
-                1
-              </span>
-            </a>
+           <CartIcon />
           </div>
         </div>
       </div>

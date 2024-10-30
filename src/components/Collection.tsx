@@ -15,7 +15,7 @@ type Product = {
 
 const Collection = () => {
   const [products, setProducts] = useState<Product[]>([]);
-
+  const category = "clothes";
   useEffect(() => {
     const db = getDatabase(app);
     const productsRef = ref(db, "clothes"); // Adjust path if needed
@@ -45,7 +45,7 @@ const Collection = () => {
             >
               {/* Hoverable Product Image */}
               <Link
-                to={`/collectionpage/${product.id}`}
+               to={`/${category}/${product.id}`}
                 className='block relative'
               >
                 <img
