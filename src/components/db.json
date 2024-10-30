@@ -1,0 +1,525 @@
+{
+  "Mason": [
+    {
+      "id": 0,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.TpPuV-xd1zB7lSrnCRTHUwHaLH%26pid%3DApi&f=1&ipt=ec5cc49b54b269fa2b00655760ac4edf275a35d603cc216dc5453051ee225a92&ipo=images",
+      "link": "#",
+      "name": "Garm Island Cosmos T-shirt",
+      "price": "₦35,000"
+    },
+    {
+      "id": 1,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.fTkdJTrVE8BGZ4wWxhnfaQHaJQ%26pid%3DApi&f=1&ipt=5df103f4da58ef8e87ad26d0d339f0a5ba92a5570083afed65d0272ff165fa15&ipo=images",
+      "link": "#",
+      "name": "Garm Island Pixel Rugby Polo Shirt in Black",
+      "price": "₦48,500"
+    },
+    {
+      "id": 2,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Vlzl8u-qznzNsyr25CoJnwHaJQ%26pid%3DApi&f=1&ipt=ba1b34b06287a6f8c48d93b207636b1f10d480abeaa6e6c250d9256c4939d67c&ipo=images",
+      "link": "#",
+      "name": "Garm Island Linen Blend Tab Collar shirt in khaki",
+      "price": "₦50,000"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/A1DEBA72-3215-4024-BB56-0967B4592128.jpg?v=1729252452&width=360",
+      "link": "#",
+      "name": "Garm Island Motorsport Rugby Polo Shirt",
+      "price": "₦48,500"
+    },
+    {
+      "id": 4,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.TpPuV-xd1zB7lSrnCRTHUwHaLH%26pid%3DApi&f=1&ipt=ec5cc49b54b269fa2b00655760ac4edf275a35d603cc216dc5453051ee225a92&ipo=images",
+      "link": "#",
+      "name": "Garm Island Pixel Rugby Polo Shirt in Blue",
+      "price": "₦48,500"
+    }
+  ],
+  "clothes": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/files/C629CC9C-3A69-4C8A-AA8A-AFF6D177065E.jpg?v=1729263719&width=120",
+      "link": "#",
+      "name": "Garm Island Cosmos T-shirt",
+      "price": "₦25,000"
+    },
+    {
+      "id": 1,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.fTkdJTrVE8BGZ4wWxhnfaQHaJQ%26pid%3DApi&f=1&ipt=5df103f4da58ef8e87ad26d0d339f0a5ba92a5570083afed65d0272ff165fa15&ipo=images",
+      "link": "#",
+      "name": "Garm Island Pixel Rugby Polo Shirt in Black",
+      "price": "₦48,500"
+    },
+    {
+      "id": 2,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Vlzl8u-qznzNsyr25CoJnwHaJQ%26pid%3DApi&f=1&ipt=ba1b34b06287a6f8c48d93b207636b1f10d480abeaa6e6c250d9256c4939d67c&ipo=images",
+      "link": "#",
+      "name": "Garm Island Linen Blend Tab Collar shirt in khaki",
+      "price": "₦50,000"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/A1DEBA72-3215-4024-BB56-0967B4592128.jpg?v=1729252452&width=360",
+      "link": "#",
+      "name": "Garm Island Motorsport Rugby Polo Shirt",
+      "price": "₦48,500"
+    },
+    {
+      "id": 4,
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.TpPuV-xd1zB7lSrnCRTHUwHaLH%26pid%3DApi&f=1&ipt=ec5cc49b54b269fa2b00655760ac4edf275a35d603cc216dc5453051ee225a92&ipo=images",
+      "link": "#",
+      "name": "Garm Island Pixel Rugby Polo Shirt in Blue",
+      "price": "₦48,500"
+    }
+  ],
+  "fitness": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/products/image_d5c2df82-3ddc-41da-9019-6e3b0a05c1de.jpg?v=1652867720&width=540",
+      "name": "Nike crew socks white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/products/image_d5c2df82-3ddc-41da-9019-6e3b0a05c1de.jpg?v=1652867720&width=540",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/products/image_14ebd975-4585-49e8-8a6d-22cd2728ad01.heic?v=1671789179&width=540",
+      "name": "Tech slides in black",
+      "price": "₦43,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Nike crew socks white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 4,
+      "image": "https://garmisland.com/cdn/shop/files/775DDAE0-1499-4A6F-8765-E7282E76EEBE.png?v=1703856520&width=540",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 5,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Tech slides in black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Nike crew socks white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/products/image_14ebd975-4585-49e8-8a6d-22cd2728ad01.heic?v=1671789179&width=540",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 8,
+      "image": "https://garmisland.com/cdn/shop/products/image_d5c2df82-3ddc-41da-9019-6e3b0a05c1de.jpg?v=1652867720&width=540",
+      "name": "Tech slides in black",
+      "price": "₦28,950"
+    }
+  ],
+  "jersey": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_0680f27f-cdeb-47de-9059-7d07963052d5.jpg?v=1695218622&width=1800",
+      "name": "ARSENAL 90-92 RETRO JERSEY T-SHIRT",
+      "price": "₦14,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/files/80224C86-ECD9-4B10-A847-51EE52E826ED.jpg?v=1695224067&width=540",
+      "name": "ENGLAND 1990 AWAY RETRO JERSEY T-shirt",
+      "price": "₦42,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/files/7B2CA9EA-AD5F-49CC-AF75-AD26D7DBC7B7.jpg?v=1695225110&width=120",
+      "name": "Barcelona 1995-1997 Retro Jersey T-shirt",
+      "price": "₦43,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e45a16b2-7cca-491d-a386-eee243f5c968.jpg?v=1703095447&width=540",
+      "name": "BRAZIL HOME RETRO JERSEY 1991-1993",
+      "price": "₦14,950"
+    },
+    {
+      "id": 4,
+      "image": "https://garmisland.com/cdn/shop/files/854047BA-FBEC-4660-ABBC-73AED14BA3E1.jpg?v=1703099553&width=120",
+      "name": "MANCHESTER UNITED VINTAGE 2000/02 RETRO JERSEY",
+      "price": "₦4,950"
+    },
+    {
+      "id": 5,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e45a16b2-7cca-491d-a386-eee243f5c968.jpg?v=1703095447&width=540",
+      "name": "BRAZIL HOME RETRO JERSEY 1991-1993",
+      "price": "₦4,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/files/854047BA-FBEC-4660-ABBC-73AED14BA3E1.jpg?v=1703099553&width=120",
+      "name": "MANCHESTER UNITED VINTAGE 2000/02 RETRO JERSEY",
+      "price": "₦4,950"
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/files/3E48A521-A631-4028-9AFD-A7CEA407A59C.jpg?v=1693843513&width=120",
+      "name": "Manchester United 1999-2000 Retro Jersey T-shirt in blue",
+      "price": "₦4,950"
+    },
+    {
+      "id": 8,
+      "image": "https://garmisland.com/cdn/shop/files/3E48A521-A631-4028-9AFD-A7CEA407A59C.jpg?v=1693843513&width=120",
+      "name": "Manchester United 1999-2000 Retro Jersey T-shirt in blue",
+      "price": "₦28,950"
+    }
+  ],
+  "socks": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/products/image_d5c2df82-3ddc-41da-9019-6e3b0a05c1de.jpg?v=1652867720&width=540",
+      "name": "Nike crew socks white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/products/image_d5c2df82-3ddc-41da-9019-6e3b0a05c1de.jpg?v=1652867720&width=540",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/products/image_14ebd975-4585-49e8-8a6d-22cd2728ad01.heic?v=1671789179&width=540",
+      "name": "Tech slides in black",
+      "price": "₦43,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Nike crew socks white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 4,
+      "image": "https://garmisland.com/cdn/shop/files/775DDAE0-1499-4A6F-8765-E7282E76EEBE.png?v=1703856520&width=540",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 5,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Tech slides in black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Nike crew socks white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/products/image_14ebd975-4585-49e8-8a6d-22cd2728ad01.heic?v=1671789179&width=540",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 8,
+      "image": "https://garmisland.com/cdn/shop/products/image_d5c2df82-3ddc-41da-9019-6e3b0a05c1de.jpg?v=1652867720&width=540",
+      "name": "Tech slides in black",
+      "price": "₦28,950"
+    }
+  ],
+  "women": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/files/image_a6402b25-a0c9-4741-b482-5c8f449e23fc.jpg?v=1688064377&width=280",
+      "name": "Diesel 1DR shoulder bag in blue",
+      "price": "₦4,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/files/image_83374c27-4810-4324-8c80-001654f200c5.jpg?v=1687946445&width=280",
+      "name": "PLT Burgundy Satin Long Sleeve Wrap Dress",
+      "price": "₦4,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/files/image_83374c27-4810-4324-8c80-001654f200c5.jpg?v=1687946445&width=280",
+      "name": "PLT Burgundy Satin Long Sleeve Wrap Dress",
+      "price": "₦4,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/image_83374c27-4810-4324-8c80-001654f200c5.jpg?v=1687946445&width=280",
+      "name": "PLT Burgundy Satin Long Sleeve Wrap Dress",
+      "price": "₦4,950"
+    },
+    {
+      "id": 4,
+    "image": "https://garmisland.com/cdn/shop/files/image_ac72e0ff-df12-4dcd-a1b6-c660765474a6.jpg?v=1687529034&width=280",
+      "name": "Zara square slipper heel",
+      "price": "₦4,950"
+    },
+    {
+      "id": 5,
+    "image": "https://garmisland.com/cdn/shop/files/image_ac72e0ff-df12-4dcd-a1b6-c660765474a6.jpg?v=1687529034&width=280",
+      "name": "Zara square slipper heel",
+      "price": "₦4,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/files/image_ac72e0ff-df12-4dcd-a1b6-c660765474a6.jpg?v=1687529034&width=280",
+      "name": "Zara square slipper heel",
+      "price": "₦4,950"
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/products/image_4aa1aa97-e958-4dc4-9961-6f99dc0a55c9.jpg?v=1663953450&width=280",
+      "name": "PULL&BEAR v neck crop top in white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 8,
+      "image": "https://garmisland.com/cdn/shop/files/image_e4c16abb-c982-484b-bf9c-4e7001be8130.jpg?v=1687952021&width=280",
+      "name": "PULL&BEAR v neck crop top in white",
+      "price": "₦4,950"
+    }
+  ],
+  "bottoms": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/files/2E04B55F-A162-419C-A5EE-3232A548EEF5.heic?v=1702031935&width=280",
+      "name": "Under Armour Logo track pants",
+      "price": "₦34,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/products/image_b190e740-0e50-4a61-8b5e-286912df7ca2.jpg?v=1669375896&width=280",
+      "name": "Blow up clothing NBA jogger pants in red",
+      "price": "₦4,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/files/2E04B55F-A162-419C-A5EE-3232A548EEF5.heic?v=1702031935&width=280",
+      "name": "Under Armour Logo track pants",
+      "price": "₦34,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/2E04B55F-A162-419C-A5EE-3232A548EEF5.heic?v=1702031935&width=280",
+      "name": "Under Armour Logo track pants",
+      "price": "₦34,950"
+    },
+    {
+      "id": 4,
+      "image": "https://garmisland.com/cdn/shop/products/image_270ecd10-a80e-4e4c-8545-d68dbccd00a2.heic?v=1671527971&width=280",
+      "name": "Blow up clothing Chicago bulls jogger pants in red",
+      "price": "₦4,950"
+    },
+    {
+      "id": 5,
+      "image": "https://garmisland.com/cdn/shop/products/image_270ecd10-a80e-4e4c-8545-d68dbccd00a2.heic?v=1671527971&width=280",
+      "name": "Blow up clothing Chicago bulls jogger pants in red",
+      "price": "₦4,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/products/image_270ecd10-a80e-4e4c-8545-d68dbccd00a2.heic?v=1671527971&width=280",
+      "name": "Blow up clothing Chicago bulls jogger pants in red",
+      "price": "₦4,950"
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/products/image_b190e740-0e50-4a61-8b5e-286912df7ca2.jpg?v=1669375896&width=280",
+      "name": "Blow up clothing NBA jogger pants in red",
+      "price": "₦4,950"
+    },
+    {
+      "id": 8,
+      "image": "https://garmisland.com/cdn/shop/products/image_b190e740-0e50-4a61-8b5e-286912df7ca2.jpg?v=1669375896&width=280",
+      "name": "Blow up clothing NBA jogger pants in red",
+      "price": "₦4,950"
+    }
+  ],
+  "tshirts": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/files/image_ebec183b-6f2d-45db-9ff7-2b1dc9ac827c.jpg?v=1686842331&width=540",
+      "name": "Garm Island Creative Dpt. T-shirt",
+      "price": "₦41,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/files/EBB23C86-BAD1-49A1-B270-2E4BD3050A9E.jpg?v=1692290441&width=280",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/files/441D4E1C-5ACB-475D-8BAE-25D2F840B762.jpg?v=1701346970&width=540",
+      "name": "Garm Island Art of Stoicism T-shirt",
+      "price": "₦43,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Nike crew socks white",
+      "price": "₦4,950"
+    },
+    {
+      "id": 4,
+      "image": "https://garmisland.com/cdn/shop/files/441D4E1C-5ACB-475D-8BAE-25D2F840B762.jpg?v=1701346970&width=540",
+      "name": "Garm Island Art of Stoicism T-shirt",
+      "price": "₦4,950"
+    },
+    {
+      "id": 5,
+      "image": "https://garmisland.com/cdn/shop/files/9F0CA4F5-CB5D-4C65-91F2-4C8F0A0EBD66.jpg?v=1709553903&width=540",
+      "name": "Garm Island Creative Dpt. T-shirt",
+      "price": "₦20,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/files/image_ebec183b-6f2d-45db-9ff7-2b1dc9ac827c.jpg?v=1686842331&width=540",
+      "name": "Garm Island Creative Dpt. T-shirt",
+      "price": "₦41,950"
+      
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/files/9F0CA4F5-CB5D-4C65-91F2-4C8F0A0EBD66.jpg?v=1709553903&width=540",
+      "name": "Garm Island Creative Dpt. T-shirt",
+      "price": "₦20,950"
+    },
+    {
+      "id": 8,
+      "image": "https://garmisland.com/cdn/shop/files/441D4E1C-5ACB-475D-8BAE-25D2F840B762.jpg?v=1701346970&width=540",
+      "name": "Garm Island Art of Stoicism T-shirt",
+      "price": "₦28,950"
+    }
+  ],
+  "accessories": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/files/image_1d4a2a6e-3117-4fb7-a288-2d101e9331b0.webp?v=1690971567&width=280",
+      "name": "Retro Frame Sun glasses in Black",
+      "price": "₦24,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/products/image_d5c2df82-3ddc-41da-9019-6e3b0a05c1de.jpg?v=1652867720&width=540",
+      "name": "Nike crew socks black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/products/image_55cf803f-af6d-4778-a9e3-96a767e878e6.jpg?v=1652702442&width=280",
+      "name": "Tactical Utility Belt",
+      "price": "₦43,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/products/image_948631e3-f245-4b4c-8980-5bfd8ab5765f.jpg?v=1656320810&width=2800",
+      "name": "Cactus Decor Necklace",
+      "price": "₦4,950"
+    },
+    {
+      "id": 4,
+      "image": "https://garmisland.com/cdn/shop/files/image_1d4a2a6e-3117-4fb7-a288-2d101e9331b0.webp?v=1690971567&width=280",
+      "name": "Retro Frame Sun glasses in Black",
+      "price": "₦24,950"
+    },
+    {
+      "id": 5,
+      "image": "https://garmisland.com/cdn/shop/files/FullSizeRender_e726e722-8267-46d8-9dcf-1eade3a40a75.jpg?v=1694329274&width=540",
+      "name": "Tech slides in black",
+      "price": "₦4,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/products/image_948631e3-f245-4b4c-8980-5bfd8ab5765f.jpg?v=1656320810&width=2800",
+      "name": "Cactus Decor Necklace",
+      "price": "₦4,950"
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/products/image_948631e3-f245-4b4c-8980-5bfd8ab5765f.jpg?v=1656320810&width=2800",
+      "name": "Cactus Decor Necklace",
+      "price": "₦4,950"
+    },
+    {
+      "id": 8,
+     "image": "https://garmisland.com/cdn/shop/products/image_55cf803f-af6d-4778-a9e3-96a767e878e6.jpg?v=1652702442&width=280",
+      "name": "Tactical Utility Belt",
+      "price": "₦3,950"
+    }
+  ],
+  "footwears": [
+    {
+      "id": 0,
+      "image": "https://garmisland.com/cdn/shop/files/6F89F495-67D2-4F26-A455-0EB03976EB8F.jpg?v=1720027881&width=280",
+      "name": "Crocs Dylan Clogs in black",
+      "price": "₦24,950"
+    },
+    {
+      "id": 1,
+      "image": "https://garmisland.com/cdn/shop/files/1BF78AAC-7F34-4C14-B2E3-E7EC183FC257.jpg?v=1704309666&width=280",
+      "name": "Nike Calm Mule Slides in Black",
+      "price": "₦14,950"
+    },
+    {
+      "id": 2,
+      "image": "https://garmisland.com/cdn/shop/files/6F89F495-67D2-4F26-A455-0EB03976EB8F.jpg?v=1720027881&width=280",
+      "name": "Crocs Dylan Clogs in black",
+      "price": "₦24,950"
+    },
+    {
+      "id": 3,
+      "image": "https://garmisland.com/cdn/shop/files/1BF78AAC-7F34-4C14-B2E3-E7EC183FC257.jpg?v=1704309666&width=280",
+      "name": "Nike Calm Mule Slides in Black",
+      "price": "₦14,950"
+    },
+    {
+      "id": 4,
+      "image": "https://garmisland.com/cdn/shop/files/6F89F495-67D2-4F26-A455-0EB03976EB8F.jpg?v=1720027881&width=280",
+      "name": "Crocs Dylan Clogs in black",
+      "price": "₦24,950"
+    },
+    {
+      "id": 5,
+      "image": "https://garmisland.com/cdn/shop/files/1BF78AAC-7F34-4C14-B2E3-E7EC183FC257.jpg?v=1704309666&width=280",
+      "name": "Nike Calm Mule Slides in Black",
+      "price": "₦14,950"
+    },
+    {
+      "id": 6,
+      "image": "https://garmisland.com/cdn/shop/products/image_4c7f8a36-43d3-4f8c-a806-5ce309ffdb4c.jpg?v=1668439711&width=280",
+      "name": "Adidas Adilette Cf+ Mono Slides",
+      "price": "₦4,950"
+    },
+    {
+      "id": 7,
+      "image": "https://garmisland.com/cdn/shop/products/image_4c7f8a36-43d3-4f8c-a806-5ce309ffdb4c.jpg?v=1668439711&width=280",
+      "name": "Adidas Adilette Cf+ Mono Slides",
+      "price": "₦4,950"
+    },
+    {
+      "id": 8,
+      "image": "https://garmisland.com/cdn/shop/products/image_4c7f8a36-43d3-4f8c-a806-5ce309ffdb4c.jpg?v=1668439711&width=280",
+      "name": "Adidas Adilette Cf+ Mono Slides",
+      "price": "₦4,950"
+    }
+  ]
+}
