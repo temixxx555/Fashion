@@ -1,4 +1,4 @@
-import { createContext, useReducer, useContext, useEffect, ReactNode } from "react";
+import { createContext, useReducer, useContext, useEffect, ReactNode, useState } from "react";
 
 type CartItem = {
   id: string;
@@ -22,11 +22,13 @@ type CartAction =
 
 type CartContextType = {
   cart: CartState;
-  addItem: (item: CartItem) => void;
+  addItem: (item: CartItem, onItemAdded?: () => void) => void;
   removeItem: (id: string) => void;
   increaseQuantity: (id: string) => void;
   decreaseQuantity: (id: string) => void;
   clearCart: () => void;
+  cartOpen: boolean;
+  setCartOpen: (open: boolean) => void;
 };
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -37,13 +39,11 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
       const existingItemIndex = state.items.findIndex(
         (item) => item.id === action.payload.id && item.size === action.payload.size
       );
-
       if (existingItemIndex !== -1) {
         const updatedItems = [...state.items];
         updatedItems[existingItemIndex].quantity += action.payload.quantity;
         return { items: updatedItems };
       }
-
       return { items: [...state.items, action.payload] };
     }
     case "REMOVE_ITEM":
@@ -70,25 +70,40 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
 };
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
-  const [cart, dispatch] = useReducer(cartReducer, { items: [] }, (initialState) => {
-    const storedCart = localStorage.getItem("cart");
-    return storedCart ? JSON.parse(storedCart) : initialState;
-  });
+  // Retrieve initial cart state from localStorage if available
+  const storedCart = localStorage.getItem("cart");
+  const initialCart = storedCart ? JSON.parse(storedCart) : { items: [] };
+
+  const [cart, dispatch] = useReducer(cartReducer, initialCart);
+  const [cartOpen, setCartOpen] = useState(false);
 
   useEffect(() => {
+    // Save cart state to localStorage on every cart change
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
-  const addItem = (item: CartItem) => dispatch({ type: "ADD_ITEM", payload: item });
- const removeItem = (id: string) => {
-  dispatch({ type: "REMOVE_ITEM", payload: id });
-};
+  const addItem = (item: CartItem, onItemAdded?: () => void) => {
+    dispatch({ type: "ADD_ITEM", payload: item });
+    if (onItemAdded) onItemAdded();
+  };
+  const removeItem = (id: string) => dispatch({ type: "REMOVE_ITEM", payload: id });
   const increaseQuantity = (id: string) => dispatch({ type: "INCREASE_QUANTITY", payload: id });
   const decreaseQuantity = (id: string) => dispatch({ type: "DECREASE_QUANTITY", payload: id });
   const clearCart = () => dispatch({ type: "CLEAR_CART" });
 
   return (
-    <CartContext.Provider value={{ cart, addItem, removeItem, increaseQuantity, decreaseQuantity, clearCart }}>
+    <CartContext.Provider
+      value={{
+        cart,
+        addItem,
+        removeItem,
+        increaseQuantity,
+        decreaseQuantity,
+        clearCart,
+        cartOpen,
+        setCartOpen,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );

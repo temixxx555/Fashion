@@ -1,0 +1,42 @@
+// PaymentMethod.tsx
+import React from 'react';
+import { PaystackButton } from 'react-paystack';
+
+interface PaymentMethodProps {
+  amount: number;
+  email: string;
+}
+
+const PaymentMethod: React.FC<PaymentMethodProps> = ({ amount, email }) => {
+  const publicKey = 'your-public-key-here'; // Replace with your Paystack public key
+
+  const onSuccess = (reference: any) => {
+    console.log('Payment successful:', reference);
+    alert('Payment successful!');
+    // Additional logic after successful payment, like updating order status
+  };
+
+  const onClose = () => {
+    console.log('Payment closed');
+    alert('Payment process was closed');
+  };
+
+  const componentProps = {
+    email,
+    amount: amount * 100, // Paystack requires the amount in kobo (cents)
+    publicKey,
+    text: 'Pay Now',
+    onSuccess,
+    onClose,
+  };
+
+  return (
+    <div className="bg-white p-6 rounded-lg shadow-md space-y-4">
+      <h2 className="text-xl font-semibold">Payment</h2>
+      <p className="text-gray-700">All transactions are secure and encrypted.</p>
+      <PaystackButton {...componentProps} className="w-full mt-4 py-2 bg-black text-white font-bold" />
+    </div>
+  );
+};
+
+export default PaymentMethod;

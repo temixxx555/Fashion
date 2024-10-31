@@ -12,9 +12,12 @@ import TshirtPage from "./Pages/TshirtPage";
 import FootWearPage from "./Pages/FootWearPage";
 import WomenPage from "./Pages/WomenPage";
 import AccesoriesPage from "./Pages/AccesoriesPage";
+import CheckOutPage from "./Pages/CheckOutPage";
+import { CartProvider } from "./components/CartContext";
 
 const AppRoutes = () => {
   return (
+    <CartProvider>
     <Routes>
       {/* Home Page */}
       <Route
@@ -101,9 +104,20 @@ const AppRoutes = () => {
         }
       />{" "}
       {/* Individual Item item page */}
+      {/*checkout*/}
+      <Route
+        path='checkout'
+        element={
+          <Layout>
+            <CheckOutPage />
+          </Layout>
+        }
+      />{" "}
+      
       {/* Catch-all route to redirect to home */}
       <Route path='*' element={<Navigate to='/' />} />
     </Routes>
+    </CartProvider>
   );
 };
 

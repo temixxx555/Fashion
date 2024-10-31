@@ -19,25 +19,28 @@ const ItemPage = () => {
   const [product, setProduct] = useState<Product | null>(null);
   const [size, setSize] = useState("M");
   const { id, category } = useParams(); // Get both category and product ID from URL
-  const { addItem } = useCart();
+  const { addItem, setCartOpen } = useCart(); // Retrieve setCartOpen here
 
   // Inside your 'Add to cart' button
   const handleAddToCart = () => {
     if (product) {
       const numericPrice = parseFloat(
-        product.price.toString().replace(/[^\d.-]/g, "") // Remove non-numeric characters
+        product.price.toString().replace(/[^\d.-]/g, "")
       );
-  
-      addItem({
-        id: `${category}/${product.id}`, // Unique composite ID
-        name: product.name,
-        price: numericPrice,
-        image: product.image,
-        size: size,
-        quantity: 1,
-      });
+      addItem(
+        {
+          id: `${category}/${product.id}`,
+          name: product.name,
+          price: numericPrice,
+          image: product.image,
+          size: size,
+          quantity: 1,
+        },
+        () => setCartOpen(true) // Open cart after adding item
+      );
     }
   };
+
   useEffect(() => {
     const db = getDatabase(app);
     const productRef = ref(db, `${category}/${id}`); // Use category in the path
@@ -60,6 +63,7 @@ const ItemPage = () => {
       </div>
     );
   }
+
   return (
     <>
       <div className='min-h-screen bg-white'>
@@ -149,15 +153,19 @@ const ItemPage = () => {
 
               {/* Action Buttons */}
               <div className='space-y-4'>
+                
+               
                 <button
                   onClick={handleAddToCart}
                   className='w-full bg-white border border-black py-3 px-4 hover:bg-gray-50'
                 >
                   Add to cart
                 </button>
+                <Link to={`/checkout`}>
                 <button className='w-full bg-black text-white py-3 px-4 hover:bg-gray-900'>
                   Buy it now
                 </button>
+                </Link>
               </div>
 
               {/* Pickup Information */}
