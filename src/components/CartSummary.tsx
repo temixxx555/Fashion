@@ -1,3 +1,4 @@
+import { PaystackButton } from "react-paystack";
 import { useState, ChangeEvent } from 'react';
 import { useCart } from "../components/CartContext";
 
@@ -28,6 +29,8 @@ interface CartItem {
   size: string;
   image: string;
 }
+
+const publicKey = "pk_test_ad5052b64a6cac698842afdab8792864a78f6e68";
 
 const CheckoutForm = () => {
   const { cart } = useCart();
@@ -81,10 +84,21 @@ const CheckoutForm = () => {
     return subtotal * TAX_RATE;
   };
 
+  const totalAmount = calculateTotal();
+
+  const componentProps = {
+    email: "user@example.com", // Replace with user's actual email
+    amount: totalAmount * 100, // Convert to kobo
+    publicKey,
+    text: "Pay Now",
+    onSuccess: () => alert("Payment Successful"),
+    onClose: () => alert("Payment closed"),
+  };
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      <div className="space-y-8">
+        <div className="space-y-8">
           {/* Delivery Section */}
           <section>
             <h2 className="text-xl font-bold mb-4">Delivery</h2>
@@ -115,11 +129,11 @@ const CheckoutForm = () => {
             )}
           </section>
 
-          {/* Shipping Method Section */}
+          {/* Shipping Method and Payment Section */}
           {deliveryMethod === 'ship' && (
             <>
- {/* Address Section */}
- <section className="mt-8">
+              {/* Address Section */}
+              <section className="mt-8">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm mb-1">First Name</label>
@@ -195,7 +209,6 @@ const CheckoutForm = () => {
                   />
                 </div>
               </section>
-
               <section className="mt-8">
                 <h2 className="text-xl font-bold mb-4">Shipping method</h2>
                 <div className="space-y-4">
@@ -218,35 +231,21 @@ const CheckoutForm = () => {
                   ))}
                 </div>
               </section>
-
-             
             </>
           )}
-            {/* Payment Section */}
-            <section>
+          <section className="mt-8">
             <h2 className="text-xl font-bold mb-4">Payment</h2>
             <div className="border p-4">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center space-x-2">
-                  <img src="/api/placeholder/32/20" alt="Mastercard" className="h-5" />
-                  <img src="/api/placeholder/32/20" alt="Visa" className="h-5" />
-                  <img src="/api/placeholder/32/20" alt="Paypal" className="h-5" />
-                </div>
-              </div>
-              <div className="border-t pt-4">
-                <p className="text-sm text-gray-600 mb-4">
-                  After clicking "Pay now", you will be redirected to complete your purchase securely.
-                </p>
-              </div>
+              <p className="text-sm text-gray-600 mb-4">
+                After clicking "Pay Now", you will be redirected to complete your purchase securely.
+              </p>
+              <PaystackButton {...componentProps} className="w-full bg-black text-white py-4 font-bold" />
             </div>
-              <button className="w-full bg-black text-white py-4 font-bold">
-            Pay now
-          </button>
           </section>
         </div>
-        
-  {/* Order Summary */}
-  <div className="lg:pl-8">
+
+        {/* Order Summary */}
+        <div className="lg:pl-8">
           <div className="bg-gray-50 p-6">
             <h2 className="text-xl font-bold mb-4">Order Summary</h2>
             <div className="space-y-4">
@@ -274,7 +273,7 @@ const CheckoutForm = () => {
               <div className="flex justify-between">
                 <span>Shipping</span>
                 <span className="font-bold">
-                  ₦{(shippingMethods.find(method => method.id === formData.shippingMethod)?.price || 0).toLocaleString()}
+                  ₦{deliveryMethod === 'ship' ? (shippingMethods.find(method => method.id === formData.shippingMethod)?.price || 0).toLocaleString() : '0'}
                 </span>
               </div>
               <div className="flex justify-between">
@@ -285,7 +284,7 @@ const CheckoutForm = () => {
               </div>
               <div className="flex justify-between pt-4 border-t">
                 <span className="font-bold">Total</span>
-                <span className="font-bold">₦{calculateTotal().toLocaleString()}</span>
+                <span className="font-bold">₦{totalAmount.toLocaleString()}</span>
               </div>
             </div>
           </div>
