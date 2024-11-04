@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { signInWithEmailAndPassword, AuthError } from "firebase/auth";
 import { auth } from "../firebaseConfig";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ADMIN_EMAIL = "admin@example.com"; // specify the admin email here
 
@@ -77,17 +77,16 @@ const Login = () => {
           Sign In
         </button>
         <div className='mt-4 text-center'>
-          <a
-            href='/forgot-password'
+        <Link to='/forgot-password'
             className='text-sm text-blue-500 hover:underline'
           >
             Forgot password?
-          </a>
+         </Link>
         </div>
         <div className='mt-2 text-center'>
-          <a href='/signup' className='text-sm text-blue-500 hover:underline'>
+        <Link to='/signup' className='text-sm text-blue-500 hover:underline'>
             Create Account
-          </a>
+        </Link>
         </div>
       </form>
     </div>
