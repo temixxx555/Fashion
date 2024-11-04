@@ -1,10 +1,8 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import Layout from "./layouts/layout";
-// Ensure the import path is correct
-import Collection from "./components/Collection"; // Import your Collection component if it's a separate page
+import Collection from "./components/Collection";
 import FitnessSupplement from "./Pages/FitnessSupplements";
-
 import ItemPage from "./Pages/ItemPage";
 import Jerseys from "./Pages/Jerseys";
 import BottomPage from "./Pages/BotttomsPage";
@@ -23,146 +21,27 @@ import Admin from "./Pages/Admin";
 const AppRoutes = () => {
   return (
     <CartProvider>
-      <Routes>
-        {/* Home Page */}
-        <Route
-          path='/'
-          element={
-            <Layout>
-              <HomePage />
-            </Layout>
-          }
-        />
-        {/* Fitness page */}
-        <Route
-          path='/fitness'
-          element={
-            <Layout>
-              <FitnessSupplement />
-            </Layout>
-          }
-        />
-        {/* Jersey page */}
-        <Route
-          path='/jersey'
-          element={
-            <Layout>
-              <Jerseys />
-            </Layout>
-          }
-        />
-        {/* Bottoms page */}
-        <Route
-          path='/bottoms'
-          element={
-            <Layout>
-              <BottomPage />
-            </Layout>
-          }
-        />
-        {/* women page */}
-        <Route
-          path='/women'
-          element={
-            <Layout>
-              <WomenPage />
-            </Layout>
-          }
-        />
-        {/* tshirts page */}
-        <Route
-          path='/tshirts'
-          element={
-            <Layout>
-              <TshirtPage />
-            </Layout>
-          }
-        />
-        {/* footwear page */}
-        <Route
-          path='/footwear'
-          element={
-            <Layout>
-              <FootWearPage />
-            </Layout>
-          }
-        />
-        {/* Accessories page */}
-        <Route
-          path='/accesories'
-          element={
-            <Layout>
-              <AccesoriesPage />
-            </Layout>
-          }
-        />
-        {/* Collections Page */}
-        <Route path='/collections' element={<Collection />} />{" "}
-        {/* Adjusting the path */}
-        {/* Individual Item Page */}
-        <Route
-          path='/:category/:id'
-          element={
-            <Layout>
-              <ItemPage />
-            </Layout>
-          }
-        />{" "}
-        {/* Individual Item item page */}
-        {/*checkout*/}
-        <Route
-          path='checkout'
-          element={
-            <Layout>
-              <CheckOutPage />
-            </Layout>
-          }
-        />{" "}
-        {/*Payment*/}
-        <Route
-          path='/login'
-          element={
-            <Layout>
-              <Login />
-            </Layout>
-          }
-        />
-        <Route
-          path='/signup'
-          element={
-            <Layout>
-              <SignUp />
-            </Layout>
-          }
-        />
-        <Route
-          path='/forgot-password'
-          element={
-            <Layout>
-              <ForgotPassword />
-            </Layout>
-          }
-        />
-        <Route
-          path='/dashboard'
-          element={
-            <Layout>
-              <LoginPage />
-            </Layout>
-          }
-        />{" "}
-        <Route
-          path='/admin'
-          element={
-            <Layout>
-              <Admin />
-            </Layout>
-          }
-        />{" "}
-        {/* Protected Route */}
-        {/* Catch-all route to redirect to home */}
-        <Route path='*' element={<Navigate to='/' />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/fitness" element={<FitnessSupplement />} />
+          <Route path="/jersey" element={<Jerseys />} />
+          <Route path="/bottoms" element={<BottomPage />} />
+          <Route path="/women" element={<WomenPage />} />
+          <Route path="/tshirts" element={<TshirtPage />} />
+          <Route path="/footwear" element={<FootWearPage />} />
+          <Route path="/accesories" element={<AccesoriesPage />} />
+          <Route path="/collections" element={<Collection />} />
+          <Route path="/:category/:id" element={<ItemPage />} />
+          <Route path="/checkout" element={<CheckOutPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/dashboard" element={<LoginPage />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Layout>
     </CartProvider>
   );
 };

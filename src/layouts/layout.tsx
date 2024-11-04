@@ -10,7 +10,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow">{children}</main>
+      <main className="flex-grow px-4" style={{ paddingTop: '6rem' }}>{children}</main>
       <Footer />
     </div>
   );
