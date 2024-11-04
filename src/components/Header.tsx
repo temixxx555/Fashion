@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header className='bg-black text-white'>
+    <header className='bg-black text-white fixed top-0 left-0 w-full z-50'>
       {/* Welcome bar */}
       <div className='text-left py-2 bg-black'>
         <p className='text-sm'>Welcome to Garm Island</p>
@@ -253,10 +253,10 @@ const Header = () => {
 
           {/* Icons */}
           <div className='flex space-x-4'>
-           <Link to='/login'>
+            <Link to='/login'>
               👤
-           </Link>
-           <CartIcon />
+            </Link>
+            <CartIcon />
           </div>
         </div>
       </div>
