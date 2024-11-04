@@ -14,109 +14,155 @@ import WomenPage from "./Pages/WomenPage";
 import AccesoriesPage from "./Pages/AccesoriesPage";
 import CheckOutPage from "./Pages/CheckOutPage";
 import { CartProvider } from "./components/CartContext";
+import LoginPage from "./Pages/LoginPage";
+import SignUp from "./components/SignUp";
+import ForgotPassword from "./components/ForgotPassword";
+import Login from "./components/Login";
+import Admin from "./Pages/Admin";
 
 const AppRoutes = () => {
   return (
     <CartProvider>
-    <Routes>
-      {/* Home Page */}
-      <Route
-        path='/'
-        element={
-          <Layout>
-            <HomePage />
-          </Layout>
-        }
-      />
-      {/* Fitness page */}
-      <Route
-        path='/fitness'
-        element={
-          <Layout>
-            <FitnessSupplement />
-          </Layout>
-        }
-      />
-      {/* Jersey page */}
-      <Route
-        path='/jersey'
-        element={
-          <Layout>
-            <Jerseys />
-          </Layout>
-        }
-      />
-      {/* Bottoms page */}
-      <Route
-        path='/bottoms'
-        element={
-          <Layout>
-            <BottomPage />
-          </Layout>
-        }
-      />
-      {/* women page */}
-      <Route
-        path='/women'
-        element={
-          <Layout>
-            <WomenPage />
-          </Layout>
-        }
-      />
-      {/* tshirts page */}
-      <Route
-        path='/tshirts'
-        element={
-          <Layout>
-            <TshirtPage />
-          </Layout>
-        }
-      />
-      {/* footwear page */}
-      <Route
-        path='/footwear'
-        element={
-          <Layout>
-            <FootWearPage />
-          </Layout>
-        }
-      />
-      {/* Accessories page */}
-      <Route
-        path='/accesories'
-        element={
-          <Layout>
-            <AccesoriesPage />
-          </Layout>
-        }
-      />
-      {/* Collections Page */}
-      <Route path='/collections' element={<Collection />} />{" "}
-      {/* Adjusting the path */}
-      {/* Individual Item Page */}
-      <Route
-        path='/:category/:id'
-        element={
-          <Layout>
-            <ItemPage />
-          </Layout>
-        }
-      />{" "}
-      {/* Individual Item item page */}
-      {/*checkout*/}
-      <Route
-        path='checkout'
-        element={
-          <Layout>
-            <CheckOutPage />
-          </Layout>
-        }
-      />{" "}
-      
-      {/* Catch-all route to redirect to home */}
-      <Route path='*' element={<Navigate to='/' />} />
-    </Routes>
+      <Routes>
+        {/* Home Page */}
+        <Route
+          path='/'
+          element={
+            <Layout>
+              <HomePage />
+            </Layout>
+          }
+        />
+        {/* Fitness page */}
+        <Route
+          path='/fitness'
+          element={
+            <Layout>
+              <FitnessSupplement />
+            </Layout>
+          }
+        />
+        {/* Jersey page */}
+        <Route
+          path='/jersey'
+          element={
+            <Layout>
+              <Jerseys />
+            </Layout>
+          }
+        />
+        {/* Bottoms page */}
+        <Route
+          path='/bottoms'
+          element={
+            <Layout>
+              <BottomPage />
+            </Layout>
+          }
+        />
+        {/* women page */}
+        <Route
+          path='/women'
+          element={
+            <Layout>
+              <WomenPage />
+            </Layout>
+          }
+        />
+        {/* tshirts page */}
+        <Route
+          path='/tshirts'
+          element={
+            <Layout>
+              <TshirtPage />
+            </Layout>
+          }
+        />
+        {/* footwear page */}
+        <Route
+          path='/footwear'
+          element={
+            <Layout>
+              <FootWearPage />
+            </Layout>
+          }
+        />
+        {/* Accessories page */}
+        <Route
+          path='/accesories'
+          element={
+            <Layout>
+              <AccesoriesPage />
+            </Layout>
+          }
+        />
+        {/* Collections Page */}
+        <Route path='/collections' element={<Collection />} />{" "}
+        {/* Adjusting the path */}
+        {/* Individual Item Page */}
+        <Route
+          path='/:category/:id'
+          element={
+            <Layout>
+              <ItemPage />
+            </Layout>
+          }
+        />{" "}
+        {/* Individual Item item page */}
+        {/*checkout*/}
+        <Route
+          path='checkout'
+          element={
+            <Layout>
+              <CheckOutPage />
+            </Layout>
+          }
+        />{" "}
+        {/*Payment*/}
+        <Route
+          path='/login'
+          element={
+            <Layout>
+              <Login />
+            </Layout>
+          }
+        />
+        <Route
+          path='/signup'
+          element={
+            <Layout>
+              <SignUp />
+            </Layout>
+          }
+        />
+        <Route
+          path='/forgot-password'
+          element={
+            <Layout>
+              <ForgotPassword />
+            </Layout>
+          }
+        />
+        <Route
+          path='/dashboard'
+          element={
+            <Layout>
+              <LoginPage />
+            </Layout>
+          }
+        />{" "}
+        <Route
+          path='/admin'
+          element={
+            <Layout>
+              <Admin />
+            </Layout>
+          }
+        />{" "}
+        {/* Protected Route */}
+        {/* Catch-all route to redirect to home */}
+        <Route path='*' element={<Navigate to='/' />} />
+      </Routes>
     </CartProvider>
   );
 };

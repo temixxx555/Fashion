@@ -6,6 +6,7 @@ import {
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
 import CartIcon from "./CartIcon";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // State to manage the dropdown visibility
@@ -252,12 +253,9 @@ const Header = () => {
 
           {/* Icons */}
           <div className='flex space-x-4'>
-            <a href='/search' className='hover:text-gray-300'>
-              🔍
-            </a>
-            <a href='/account' className='hover:text-gray-300'>
+           <Link to='/login'>
               👤
-            </a>
+           </Link>
            <CartIcon />
           </div>
         </div>
