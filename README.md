@@ -35,3 +35,7 @@ StyleSphere is a sleek, modern fashion web application designed to provide users
 ```bash  
 git clone https://github.com/your-username/stylesphere.git  
 cd stylesphere  
+
+### **Acknowledgements**  
+- **Technologies: Firebase, React.js, Tailwind CSS, and Paystack.. .  
+- **Inspiration: garmisland.com
